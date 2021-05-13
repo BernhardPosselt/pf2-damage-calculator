@@ -10,21 +10,57 @@
 <body>
 <main class="container">
     <h1 class="mt-5">Calculate Average Damage</h1>
+    <form>
+        <div class="row mt-5">
+            <div class="col-2">
+                <label for="atk" class="form-label">Attack</label>
+                <input type="number" value="10" class="form-control" id="atk" required>
+            </div>
+            <div class="col-2">
+                <label for="atk-bonus" class="form-label">Attack Bonus</label>
+                <input type="number" value="0" class="form-control" id="atk-bonus" required>
+            </div>
+            <div class="col-2">
+                <label for="map1" class="form-label">MAP</label>
+                <input type="number" value="-5" class="form-control" id="map1" required>
+            </div>
+            <div class="col-2">
+                <label for="map2" class="form-label">MAP 2</label>
+                <input type="number" value="-10" class="form-control" id="map2" required>
+            </div>
+            <div class="col-4">
+                <label for="formula" class="form-label">Damage Dice Formula</label>
+                <input type="text" class="form-control" id="formula" value="2d10+3" required>
+            </div>
+        </div>
 
-    <div class="row">
-        <div class="col-2">
-            <label for="attack-bonus" class="form-label">Attack Bonus</label>
-            <input type="text" class="form-control" id="attack-bonus" placeholder="10">
+        <div class="row mt-5">
+            <div class="col-2">
+                <label for="ac" class="form-label">Armor Class</label>
+                <input type="number" class="form-control" id="ac" value="10" required>
+            </div>
+            <div class="col-2">
+                <label for="ac-bonus" class="form-label">Armor Class Bonus</label>
+                <input type="number" value="0" class="form-control" id="ac-bonus" required>
+            </div>
         </div>
-        <div class="col-4">
-            <label for="formula" class="form-label">Damage Dice Formula</label>
-            <input type="text" class="form-control" id="formula" placeholder="2d10+3">
-        </div>
-        <div class="col-6" id="average-damage">
-            <p>Average Damage: 21</p>
-        </div>
-    </div>
+    </form>
 
+    <h2 class="mt-5">Average Damage</h2>
+    <table class="table" id="result">
+        <thead>
+        <th>1st Hit</th>
+        <th>2nd Hit</th>
+        <th>3rd Hit</th>
+        </thead>
+        <tbody>
+            <tr>
+                <td></td>
+                <td></td>
+                <td></td>
+            </tr>
+        </tbody>
+    </table>
 </main>
 </body>
 </html>

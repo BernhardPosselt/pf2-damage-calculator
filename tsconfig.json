@@ -3,12 +3,18 @@
     "target": "es2020",
     "module": "commonjs",
     "lib": [
-      "dom"
+      "dom",
+      "ES2020",
+      "ESNext"
     ],
     "strict": true,
     "esModuleInterop": true,
     "skipLibCheck": true,
     "forceConsistentCasingInFileNames": true,
-    "allowSyntheticDefaultImports": true
+    "allowSyntheticDefaultImports": true,
+    "typeRoots": [
+      "src/typings",
+      "node_modules/@types"
+    ]
   }
 }
