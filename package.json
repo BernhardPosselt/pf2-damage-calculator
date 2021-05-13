@@ -12,7 +12,8 @@
     "dice-expression-evaluator": "^0.1.2"
   },
   "scripts": {
-    "build": "./node_modules/.bin/webpack --mode production"
+    "build": "./node_modules/.bin/webpack --mode production",
+    "serve": "./node_modules/.bin/webpack serve"
   },
   "devDependencies": {
     "@types/mini-css-extract-plugin": "^1.4.3",

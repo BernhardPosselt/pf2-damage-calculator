@@ -1,10 +1,13 @@
-import * as webpack from 'webpack';
-// just in case you run into any typescript error when configuring `devServer`
-import 'webpack-dev-server';
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-//const MiniCssExtractPlugin = require('mini-css-extract-plugin');
+import path from "path";
+import {Configuration as WebpackConfiguration} from "webpack";
+import {Configuration as WebpackDevServerConfiguration} from "webpack-dev-server";
 
-const config: webpack.Configuration = {
+interface Configuration extends WebpackConfiguration {
+    devServer?: WebpackDevServerConfiguration;
+}
+
+const config: Configuration = {
     entry: './src/index.ts',
     module: {
         rules: [
@@ -24,5 +27,6 @@ const config: webpack.Configuration = {
     },
     plugins: [new MiniCssExtractPlugin()],
 };
+
 
 export default config;

@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="utf-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <script src="dist/main.js"></script>
+    <link rel="stylesheet" href="dist/main.css">
+    <title>Pathfinder 2 Average Damage Calculator</title>
+</head>
+<body>
+<main class="container">
+    <h1 class="mt-5">Calculate Average Damage</h1>
+
+    <div class="row">
+        <div class="col-2">
+            <label for="attack-bonus" class="form-label">Attack Bonus</label>
+            <input type="text" class="form-control" id="attack-bonus" placeholder="10">
+        </div>
+        <div class="col-4">
+            <label for="formula" class="form-label">Damage Dice Formula</label>
+            <input type="text" class="form-control" id="formula" placeholder="2d10+3">
+        </div>
+        <div class="col-6" id="average-damage">
+            <p>Average Damage: 21</p>
+        </div>
+    </div>
+
+</main>
+</body>
+</html>
