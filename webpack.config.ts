@@ -1,5 +1,4 @@
 import MiniCssExtractPlugin from 'mini-css-extract-plugin';
-import path from "path";
 import {Configuration as WebpackConfiguration} from "webpack";
 import {Configuration as WebpackDevServerConfiguration} from "webpack-dev-server";
 
@@ -26,6 +25,9 @@ const config: Configuration = {
         extensions: ['.tsx', '.ts', '.js'],
     },
     plugins: [new MiniCssExtractPlugin()],
+    devServer:{
+        writeToDisk: true,
+    },
 };
 
 
