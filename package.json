@@ -1,0 +1,27 @@
+{
+  "name": "pf2-damage-calculator",
+  "version": "0.0.1",
+  "description": "A calculator to determine average damage when attacking a creature",
+  "main": "index.js",
+  "repository": "git@github.com:BernhardPosselt/pf2-damage-calculator.git",
+  "author": "Bernhard Posselt <dev@bernhard-posselt.com>",
+  "license": "AGPL3+",
+  "private": true,
+  "dependencies": {
+    "dice-expression-evaluator": "^0.1.2"
+  },
+  "scripts": {
+    "build": "./node_modules/.bin/webpack --mode production"
+  },
+  "devDependencies": {
+    "@types/node": "^15.0.3",
+    "@types/webpack": "^5.28.0",
+    "@types/webpack-dev-server": "^3.11.4",
+    "ts-loader": "^9.1.2",
+    "ts-node": "^9.1.1",
+    "typescript": "^4.2.4",
+    "webpack": "^5.37.0",
+    "webpack-cli": "^4.7.0",
+    "webpack-dev-server": "^3.11.2"
+  }
+}
